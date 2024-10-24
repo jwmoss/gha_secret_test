@@ -26,5 +26,6 @@ jobs:
           TESTRAIL_REPORT='true'
           "@
           New-item -Name .env -Value $env_contents -ItemType File -Force
+          Get-Content .env
           Write-Host "Running report for most recent Beta on Windows"
           Write-Host "$env:TESTRAIL_USERNAME"

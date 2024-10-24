@@ -8,12 +8,12 @@ on:
         type: choice
         description: Select me
         options:
-        - test
+          - test
 jobs:
   windows:
     runs-on: windows-latest
     steps:
-      - name: Set Environment  
+      - name: Set Environment
         env:
           TESTRAIL_BASE_URL: ${{ secrets.TESTRAIL_BASE_URL }}
           TESTRAIL_API_KEY: ${{ secrets.TESTRAIL_API_KEY }}
